@@ -3,7 +3,7 @@
 Author: Hitomi Nakamura
 Date: 6/10/2020
 Edot Date: 6/10/2020
-Project Name: GWW Segment D1
+Project Name: #######
 ---Note---
 This script will add all the required attribute fields from P360 standards to the feature class.
 This will apply to the input feature class. If you want to apply to all the feature classes in the gdb, please use "Add_Fields_P360.py"
