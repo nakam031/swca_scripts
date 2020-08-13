@@ -2,7 +2,7 @@
 Author: Hitomi Nakamura
 Date: 6/18/2020
 Edit Date: 6/24/2020
-Project Name: GWW Segment D1
+Project Name: ####
 ---Note---
 This script will add all the required attribute fields from SWCA standard to the feature classes.
 Input can be multiple feature classes.
@@ -19,14 +19,14 @@ fcList = fcList.split(";")
 arcpy.env.overwriteOutput = True
 
 
-polygon_df = pd.read_excel(r"N:\Projects\15000\15915_18_GatewayWestSegmentD1\assets\pythonScript\tableUsedForScript\SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='PolygonFeatureClass')
+polygon_df = pd.read_excel(r"SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='PolygonFeatureClass')#actual path needed
 # header = list(df.columns)
 polygon_df = polygon_df.fillna("")
 polygon_ls = polygon_df.values.tolist()
-linear_df = pd.read_excel(r"N:\Projects\15000\15915_18_GatewayWestSegmentD1\assets\pythonScript\tableUsedForScript\SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='LinearFeatureClass')
+linear_df = pd.read_excel(r"SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='LinearFeatureClass')
 linear_df = linear_df.fillna("")
 linear_ls = linear_df.values.tolist()
-point_df = pd.read_excel(r"N:\Projects\15000\15915_18_GatewayWestSegmentD1\assets\pythonScript\tableUsedForScript\SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='PointFeatureClass')
+point_df = pd.read_excel(r"SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='PointFeatureClass')
 point_df = point_df.fillna("")
 point_ls = point_df.values.tolist()
 
