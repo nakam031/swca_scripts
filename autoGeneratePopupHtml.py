@@ -5,7 +5,7 @@ start_time = time.time()
 
 
 
-excel = r"N:\Projects\15000\15915_18_GatewayWestSegmentD1\assets\pythonScript\tableUsedForScript\SWCABlueStandardAttributeFields_forScript.xlsx"
+excel = r""#replace with xlsx
 df = pd.read_excel(excel,None)
 sheetNameList = list(df.keys())
 
@@ -20,6 +20,6 @@ for sheetName in sheetNameList:
     lastAppend = '</tbody></table>'
     mainList.append(lastAppend)
     listToStr = '\n'.join(map(str, mainList))
-    htmlFileName = "N:\\Projects\\15000\\15915_18_GatewayWestSegmentD1\\assets\\htmlCodeForCustomPopup\\{}Popup.html".format(sheetName)
+    htmlFileName = "htmlCodeForCustomPopup\\{}Popup.html".format(sheetName)###replace with actual path
     with open(htmlFileName, "w") as file1:
         file1.write(listToStr)
