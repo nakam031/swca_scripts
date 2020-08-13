@@ -21,21 +21,11 @@ if dataType == "FeatureDataset":
 elif dataType == "Workspace":
     database = inputData
 
-####for future usage####
-# polygon_df = pd.read_excel(r"N:\Projects\15000\15915_18_GatewayWestSegmentD1\Data\Tables\SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='PolygonFeatureClass')
-# polygon_df = polygon_df.fillna("")
-# polygon_ls = polygon_df.values.tolist()
-# linear_df = pd.read_excel(r"N:\Projects\15000\15915_18_GatewayWestSegmentD1\Data\Tables\SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='LinearFeatureClass')
-# linear_df = linear_df.fillna("")
-# linear_ls = linear_df.values.tolist()
-# point_df = pd.read_excel(r"N:\Projects\15000\15915_18_GatewayWestSegmentD1\Data\Tables\SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='PointFeatureClass')
-# point_df = point_df.fillna("")
-# point_ls = point_df.values.tolist()
 
 #domain dictionary
-AreaUom_df = pd.read_excel(r"N:\Projects\15000\15915_18_GatewayWestSegmentD1\Data\Script\tableUsedForScript\SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='AreaUom',index_col=0)
-LengthUom_df = pd.read_excel(r"N:\Projects\15000\15915_18_GatewayWestSegmentD1\Data\Script\tableUsedForScript\SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='LengthUom',index_col=0)
-Office_df = pd.read_excel(r"N:\Projects\15000\15915_18_GatewayWestSegmentD1\Data\Script\tableUsedForScript\SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='OfficeCode',index_col=0)
+AreaUom_df = pd.read_excel(r"SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='AreaUom',index_col=0)#replace with filepath
+LengthUom_df = pd.read_excel(r"SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='LengthUom',index_col=0)
+Office_df = pd.read_excel(r"SWCABlueStandardAttributeFields_forScript.xlsx",sheet_name='OfficeCode',index_col=0)
 
 AreaUom_dict = AreaUom_df.to_dict()["DESCRIPTION"]
 LengthUom_dict = LengthUom_df.to_dict()["DESCRIPTION"]
