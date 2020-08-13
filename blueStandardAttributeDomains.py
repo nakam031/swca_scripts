@@ -2,7 +2,7 @@
 Author: Hitomi Nakamura
 Date: 6/16/2020
 Edit Date: 6/17/2020
-Project Name: GWW Segment D1
+Project Name: ######
 ---Note---
 This script will add all the domains to the gdb and apply to applicable fields in the feature classes.
 
