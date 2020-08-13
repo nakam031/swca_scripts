@@ -2,9 +2,9 @@
 Author: Hitomi Nakamura
 Date: 6/16/2020
 Edit Date: 6/16/2020
-Project Name: GWW Segment D1
+Project Name: #####
 ---Note---
-This script is creates ROW polygon specifically for GWWSegmentD1 Project
+This script is creates ROW polygon specifically for #####
 """
 
 import arcpy
