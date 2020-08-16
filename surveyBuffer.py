@@ -2,7 +2,7 @@
 Author: Hitomi Nakamura
 Date: 6/1/2020
 Edit Date: 6/16/2020
-Project Name: GWW Segment D1
+Project Name: #####
 ---Note---
 This script creates survey area buffer
 """
