@@ -13,3 +13,4 @@ Language and module used in the scripts above
 - math
 - glob
 - time
+- JSON
