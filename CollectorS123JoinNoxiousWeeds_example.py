@@ -18,9 +18,9 @@ def clean_field(fl,field_list):
             
 arcpy.env.overwriteOutput = True
 arcpy.env.workspace = r""#set workspace 
-input_polygon = "https://webmap1.swca.com/server/rest/services/SLC15915_18/Noxious_Weeds/FeatureServer/0"
-input_survey = "https://webmap1.swca.com/server/rest/services/Hosted/service_c10e5cabe7e94cfcb09f1155edf07a3b/FeatureServer/0"
-target_layer = "https://webmap1.swca.com/server/rest/services/Hosted/Noxious_Weeds_with_Survey_Data/FeatureServer/0"
+input_polygon = "https://swca.com/server/rest/services/SLC15915_18/Noxious_Weeds/FeatureServer/0"
+input_survey = "https://swca.com/server/rest/services/Hosted/service_c10e5cabe7e94cfcb09f1155edf07a3b/FeatureServer/0"
+target_layer = "https://swca.com/server/rest/services/Hosted/Noxious_Weeds_with_Survey_Data/FeatureServer/0"
 polygon = arcpy.MakeFeatureLayer_management(input_polygon,"noxiousWeedsPolygon")
 
 with arcpy.da.SearchCursor(target_layer, ["site_id","smeqcreviewer","qcnotes"]) as cursor:
